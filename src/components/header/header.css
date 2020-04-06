@@ -119,22 +119,11 @@ padding: 10px;
   .div-rate{
       display: flex;
       justify-content: space-between;
+      flex-direction: row-reverse;
   }
 
  
 
-  .header{
-    
-  }
+  
 
-  .ratee{
-border: black solid 1px;
-  }
-
-  .searchs{
-    border: black solid 1px;
-  }
-
-  .titre{
-    border: black solid 1px;
-  }
+  
