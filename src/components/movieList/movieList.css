@@ -1,0 +1,93 @@
+.bkg{
+    border:  solid 1px black;
+}
+
+.head{
+    background-color: #f8bbd0;
+    height: 100px;
+}
+
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: purple;
+}
+
+.side{
+    height: 500px;
+}
+
+.serach-bar{
+    display: flex;
+}
+
+
+
+
+  /*rate*/
+  
+
+
+  /*search2*/
+  
+      
+  
+  section{
+    padding: 5em;
+}
+::-webkit-input-placeholder { 
+  color: #fff;
+}
+::-moz-placeholder { 
+  color: #fff;
+}
+.search-focus {
+    background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat left;
+    border: 1px solid #ccc;
+    outline: none;
+    background-size: 22px;
+    background-position: 13px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    transition: all .5s;
+}
+.search-focus:focus{
+    width: 300px;
+    padding-left: 50px;
+}
+
+.search-hover {
+    background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat left;
+    border: 1px solid #ccc;
+    outline: none;
+    background-size: 22px;
+    background-position: 13px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 25px;
+    transition: all .5s;
+}
+.search-hover:hover{
+    width: 300px;
+    padding-left: 50px;
+}
+
+.search-click {
+position: relative;
+overflow: hidden;
+height: 50px;
+}  
+.search-click input {
+background: transparent;
+border: 1px solid #ccc;
+outline: none;
+position: absolute;
+width: 300px;
+height: 50px;
+left: 0%;
+padding: 10px;
+}

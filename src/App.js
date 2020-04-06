@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component, BootBox} from 'react';
+import Header from './components/header/header';
+import MovieList from './components/movieList/movieList';
+import Add from './components/movieList/add';
+//import {movies} from './components/data';
+import { connect } from 'react-redux';
 import './App.css';
+import MovieRouter from './router/router'
+import MovieApp from './components/movieList/movieApp'
 
-function App() {
+
+
+class App extends Component {
+
+  
+  
+    
+       
+      render(){
+       
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <MovieRouter />
+      
+    
     </div>
   );
 }
+}
 
-export default App;
+const mapStateToProps = state => ({
+  movies: state.movies
+
+});
+
+
+export default connect(mapStateToProps) (App);
