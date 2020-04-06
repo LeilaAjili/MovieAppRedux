@@ -12,7 +12,7 @@ import {bootbox, alert} from 'react-bootbox'
 
 
 
-const MovieCard = ({elm, deleteMovie, }  )=> {
+const MovieCard = ({elm, deleteMovie }  )=> {
 
 
     let starArray = [];
@@ -91,7 +91,7 @@ const MovieCard = ({elm, deleteMovie, }  )=> {
                             
                             <div className="location">
                             <button className="buttton" >
-                            <Edit elm = {elm} />
+                            <Edit elm = {elm}  />
                             </button>
                             
                             </div>
@@ -103,11 +103,6 @@ const MovieCard = ({elm, deleteMovie, }  )=> {
 
                             <div className="price" aria-hidden="true" label for = {'card'+elm.id} > 
                             <button className="buttton" onClick={() => {
-                                
-                                
-                                
-                                
-                                
                                 deleteMovie(elm.id)}
                             } >
                             <img src="delete2.png" className="img"  />

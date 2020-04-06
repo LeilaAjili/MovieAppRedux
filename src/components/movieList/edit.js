@@ -41,17 +41,8 @@ class Edit extends Component {
 
 
   handleSubmit=(event) =>{
-    this.props.editMovie(this.props.label,{
-
-      title: this.state.title,
-      details:this.state.details,
-      rate: this.state.rate,
-      release: this.state.release,
-      desc: this.state.desc,
-      img: this.state.img,
-
-
-    })
+    this.props.editMovie(this.props.elm.id, this.state
+      )
     && 
        
    
